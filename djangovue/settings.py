@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_jwt',
     'corsheaders',    
+    'webpack_loader',
     'catalog'
 ]
 
@@ -178,3 +179,12 @@ JWT_AUTH = {
 CORS_ORIGIN_WHITELIST = (
     'localhost:8080',
 )
+
+## Configure the Webpack Loader
+
+WEBPACK_LOADER = {
+    'DEFAULT': {
+        'BUNDLE_DIR_NAME': '',
+        'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.json'),
+    }
+}

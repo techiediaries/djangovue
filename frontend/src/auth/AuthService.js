@@ -20,7 +20,7 @@ export default class AuthService {
   auth0 = new auth0.WebAuth({
     domain: 'techiediaries.auth0.com',
     clientID: 'TcHzYEyEzpJ0gYtYVyavXXjidRjQ7Yqw',
-    redirectUri: 'http://localhost:8080',
+    redirectUri: 'http://localhost:8000/',
     audience: 'https://djangovuedemoapi.techiediaries.com',
     responseType: 'token id_token',
     scope: 'openid profile'
